@@ -1,0 +1,132 @@
+
+/* cover nav bar */
+
+
+.masthead {
+    margin-bottom: 2rem;
+  }
+  
+  .masthead-brand {
+    margin-bottom: 0;
+  }
+  
+  .nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+  }
+  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: white;
+    color: white;
+  }
+  
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+ 
+/* icons */
+
+
+i {
+    margin:10px;
+    padding:10px;
+    color: rgba(255, 255, 255, .5);
+}
+
+i:hover {
+    color: white;
+}
+
+.white {
+    color: white !important
+}
+
+
+/* background */
+
+body {
+    height: 100%;
+    background-color: #333;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url("/resources/css/img/field.jpg");
+    background-size: cover;
+    color:  white !important;
+  }
+
+/* jumbotron */
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("/resources/css/img/notebook.jpg");
+    background-size: cover;
+}
+
+/*
+ * Footer
+ */
+ .mastfoot {
+     text-align: center;
+    color: rgba(255, 255, 255, .5);
+  }
+  /* adjust height of discord link */
+.level-discord {
+    margin-top: 10px;
+}
+  
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:rgb(255, 255, 255); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+h2 {
+    margin-right: 20px;
+    padding-left: 13px;
+    padding-top: 14px;
+    
+}
+
+
+
+.card-two-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/bitcoin.jpg");
+    background-size: cover;
+}
+
+.card-three-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/art.jpg");
+    background-size: cover;
+}
+
+.card-one-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/relationship.jpg");
+    background-size: cover;
+}
+
+.card-four-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/actor.jpg");
+    background-size: cover;
+}
+
+.card-five-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/acoustic.jpg");
+    background-size: cover;
+}
+
+.card-six-background  {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("/resources/css/img/atlas.jpg");
+    background-size: cover;
+}
+.card-header {
+   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("/resources/css/img/notebook.jpg");
+}
+
