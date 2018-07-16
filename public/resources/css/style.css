@@ -51,8 +51,7 @@ i:hover {
 
 body {
     height: 100%;
-    background-color: #333;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url("/resources/css/img/field.jpg");
+    background-color: black !important;
     background-size: cover;
     color:  white !important;
   }
