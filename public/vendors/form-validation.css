@@ -14,3 +14,7 @@
     height:80px;
     font-size:14pt;
 }
+
+body {
+    background-color: black !important;
+}
