@@ -1,4 +1,4 @@
-<% include partials/headercontact %>
+<% include ./partials/headercontact %>
 
 
 
@@ -6,25 +6,25 @@
           <div class="py-5 text-center">
             
             <h2>Contact Us</h2>
-            <p class="lead">If you have any questions Drop us a line.</p>
+            <p class="lead">If you have any questions drop us a line.</p>
           </div>
     
     
           
             <div class="">
               <h4 class="mb-3"></h4>
-              <form class="needs-validation was-validated" novalidate="">
+              <form method="POST" class="needs-validation was-validated" action="https://liveformhq.com/form/7fe18e47-be52-4413-9fa5-23e2fc132b62">
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <input name="name" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
                       Valid first name is required.
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <input name="last name" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                     <div class="invalid-feedback">
                       Valid last name is required.
                     </div>
@@ -35,23 +35,27 @@
     
                 <div class="mb-3">
                   <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback">
                     Please enter a valid email address for shipping updates.
                   </div>
                 </div>
     
                 <div class="mb-3">
-                  <label for="address">Message</label>
-                  <input type="text" class="form-control" id="address" placeholder="" required="">
+                  <label for="message">Message</label>
+                  <input name="message" type="text" class="form-control" id="address" placeholder="" required="">
                   <div class="invalid-feedback">
                     Please enter your message
                   </div>
                 </div>
-    
+                <input type="hidden" name="_redirect" value="http://localhost:5000/thankyou">
                
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg " type="submit">Submit</button>
+                <button id="myBtn" class="btn btn-primary btn-lg " type="submit">Submit</button>
+                <p id="demo"></p>
+
+           
+
               </form>
             </div>
           </div>
@@ -66,8 +70,12 @@
         <script src="../../assets/js/vendor/popper.min.js"></script>
         <script src="../../dist/js/bootstrap.min.js"></script>
         <script src="../../assets/js/vendor/holder.min.js"></script>
+            
+       
+       
+        
         <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
           (function() {
             'use strict';
     
@@ -88,6 +96,7 @@
             }, false);
           })();
         </script>
+        
       <% include partials/footer %>
-    
+
     </body>

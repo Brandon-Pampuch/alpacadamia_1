@@ -1,0 +1,22 @@
+<% include ./partials/headerone %>
+<div class="container">
+<div class="row" style="margin-top: 100px">
+    <div class="col-8" >
+        <h1 style="margin-left:20px"><%= blog.title %></h1>
+        <h3 style="margin-left:20px"><%= blog.subtitle %></h3>
+    </div>
+     <div class="col-4 ">   <!-- add col-12 for small -->
+            <img class="img-thumbnail smallpics float-right" style="margin-right:20px" src="<%=blog.image%>">
+    </div>
+</div>
+<div class="col-12">
+        <hr style="background: white; border: 2px; height: 2px; width: auto">
+   </div>
+    <div>
+      <span style="margin-left:20px"><%=blog.created.toDateString()%></span>
+        <p style="margin-top:30px; margin-left:20px"><%=blog.body%></p>
+        
+    </div>
+</div>
+
+<% include partials/footer %>

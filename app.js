@@ -13,7 +13,8 @@ var conn = mongoose.createConnection('mongodb://pabloshampoo:whatthea1@ds147451.
 
 
 var Blog = conn.model('Blog', new mongoose.Schema({
-    title : String, 
+    title : String,
+    subtitle : String, 
     image : String,
     body: String,
     created:{type: Date, default: Date.now}
@@ -35,8 +36,16 @@ app.get( "/blog",function(req,res){
             res.render("blog",{blogs:blogs})
         }
     })
-    
+})
 
+app.get("/blogs/:id", function(req,res){
+    Blog.findById(req.params.id,function(err,foundBlog){
+        if(err){
+            console.log("error")
+        }else{
+            res.render("blogs",{blog:foundBlog})
+        }
+    });
 })
 
 app.get( "/notes",function(req,res){
@@ -59,7 +68,10 @@ app.get( "/about",function(req,res){
 
 })
 
+app.get( "/thankyou",function(req,res){
+    res.render("thankyou")
 
+})
 
 app.listen(process.env.PORT || 5000, () => console.log("server is spining"))
 

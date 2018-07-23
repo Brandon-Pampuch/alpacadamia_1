@@ -127,27 +127,21 @@ h2 {
 .card-header {
    background-color: #b0453b !important
 }
-/* blog index css */
+
+.largepics {
+    height: 100px;
+    width: 200px;
+}
+
 .smallpics {
     height: 200px;
     width: 200px;
 }
 
-.row-centered {
-    text-align:center;
-}
-
-.col-centered {
-    display:inline-block;
-    float:none;
-    text-align: left; 
-    margin-right:-4px;
-   
-}
-
-/* blog posts */
-
-.largepics {
-    height: 100px;
-    width: 100px;
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
 }
